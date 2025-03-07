@@ -1,0 +1,28 @@
+<mat-card appearance="raised" class="profile-form">
+  <div class="profile-form__header">
+    <img src="https://cdn.vectorstock.com/i/500p/54/17/person-gray-photo-placeholder-man-vector-24005417.jpg" alt="Mi foto" />
+    <button class="fab" mat-mini-fab aria-label="Example icon button with a menu icon">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </div>
+  <mat-card-content>
+    <form class="profile-form__form">
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombres y apellidos" type="text">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Correo</mat-label>
+        <input matInput placeholder="Correo electrónico" type="email">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input matInput placeholder="Contraseña" type="password">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions class="profile-form__actions">
+    <button mat-stroked-button>Volver</button>
+    <button mat-flat-button>Guardar</button>
+  </mat-card-actions>
+</mat-card>

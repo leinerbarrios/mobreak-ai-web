@@ -1,6 +1,8 @@
-.ilustration {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 300px;
+main {
+  display: flex;
+  flex-direction: column;
+  .ilustration {
+    width: 300px;
+    margin-top: auto;
+  }
 }

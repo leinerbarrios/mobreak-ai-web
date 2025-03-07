@@ -1,0 +1,42 @@
+.profile-form {
+  background-color: var(--mat-sys-on-primary);
+  margin-bottom: 1rem;
+  &__header {
+    margin: 2rem 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      object-fit: cover;
+      border: 1px solid var(--mat-sys-primary);
+    }
+    .fab {
+      position: absolute;
+      bottom: 0;
+      right: 9rem;
+      background-color: var(--mat-sys-on-primary);
+      color: var(--mat-sys-primary);
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    gap: .5rem;
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+}
