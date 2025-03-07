@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <span class="app-name">MoBreak AI</span>
+  <span class="example-spacer"></span>
+  <nav class="menu">
+    @for (item of menu; track $index) {
+      <a class="menu__item" [routerLink]="item.path" routerLinkActive="active">
+        @if (item.title.length > 0) {
+          <button mat-button routerLinkActive="active">
+            <span>{{ item.title }}</span>
+            <mat-icon>{{ item.icon }}</mat-icon>
+          </button>
+        } @else {
+          <button mat-icon-button routerLinkActive="active">
+            <mat-icon>{{ item.icon }}</mat-icon>
+          </button>
+        }
+      </a>
+    }
+  </nav>
+</mat-toolbar>

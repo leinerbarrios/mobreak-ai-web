@@ -1,0 +1,27 @@
+@import "../../../styles/tokens.scss";
+
+mat-toolbar {
+  background-color: var(--mat-sys-tertiary-fixed);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  .app-name {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    &__item {
+      .active {
+        background-color: var(--mat-sys-primary);
+        color: var(--mat-sys-on-primary);
+      }
+    }
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
