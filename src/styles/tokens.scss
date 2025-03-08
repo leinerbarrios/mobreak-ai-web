@@ -65,6 +65,10 @@
     inverse-secondary: #a0cfd5,
     inverse-tertiary: #c8c6c8,
   ));
+  @include mat.chips-overrides((
+    elevated-selected-container-color: var(--mat-sys-primary),
+    selected-label-text-color: var(--mat-sys-on-primary)
+  ));
 }
 
 /* Dark Theme */

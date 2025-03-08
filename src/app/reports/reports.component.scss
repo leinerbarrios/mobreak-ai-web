@@ -1,0 +1,14 @@
+.table-container {
+  margin: 0 auto;
+  width: 750px;
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .table {
+    border: 1px solid var(--mat-sys-primary);
+    margin-bottom: .5rem;
+  }
+}

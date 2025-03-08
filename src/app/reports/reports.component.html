@@ -1,0 +1,61 @@
+<app-banner title="Reporte de ejercicios"
+  subtitle="Supervisa tus pausas activas, bien sea de la semana actual o todas" />
+
+<section class="table-container">
+
+  <div class="table-container__controls">
+    <button mat-button>
+      <mat-icon>download</mat-icon>
+      Descargar reporte
+    </button>
+    <mat-chip-set>
+      <mat-chip onKeyPress [highlighted]="selectedChip === 'Semana actual'" (click)="selectChip('Semana actual')">
+        Semana actual
+      </mat-chip>
+
+      <mat-chip onKeyPress [highlighted]="selectedChip === 'Ver todo'" (click)="selectChip('Ver todo')">
+        Ver todo
+      </mat-chip>
+    </mat-chip-set>
+
+  </div>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table">
+
+    <ng-container matColumnDef="pauseType">
+      <th style="background-color: var(--mat-sys-primary); color: var(--mat-sys-on-primary)" mat-header-cell
+        *matHeaderCellDef> Tipo de pausa </th>
+      <td mat-cell *matCellDef="let pause"> {{pause.pauseType}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="duration">
+      <th style="background-color: var(--mat-sys-primary); color: var(--mat-sys-on-primary)" mat-header-cell
+        *matHeaderCellDef> Duración </th>
+      <td mat-cell *matCellDef="let pause"> {{pause.duration}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dateOfRealization">
+      <th style="background-color: var(--mat-sys-primary); color: var(--mat-sys-on-primary)" mat-header-cell
+        *matHeaderCellDef> Fecha de realización </th>
+      <td mat-cell *matCellDef="let pause"> {{pause.dateOfRealization}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="timeOfRealization">
+      <th style="background-color: var(--mat-sys-primary); color: var(--mat-sys-on-primary)" mat-header-cell
+        *matHeaderCellDef> Hora de realización </th>
+      <td mat-cell *matCellDef="let pause"> {{pause.timeOfRealization}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="state">
+      <th style="background-color: var(--mat-sys-primary); color: var(--mat-sys-on-primary)" mat-header-cell
+        *matHeaderCellDef> Completado </th>
+      <td mat-cell *matCellDef="let pause"> {{pause.state}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="10" showFirstLastButtons>
+  </mat-paginator>
+</section>

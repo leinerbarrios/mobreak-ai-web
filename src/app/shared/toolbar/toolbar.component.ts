@@ -16,7 +16,7 @@ export class ToolbarComponent {
     { title: '', icon: 'settings', path: '/settings' },
     { title: 'Listado de pausas activas', icon: 'today', path: '/pauses' },
     { title: 'Tipos de ejercicios', icon: 'list', path: '/exercises' },
-    { title: 'Informe', icon: 'folder', path: '/report' },
+    { title: 'Informe', icon: 'folder', path: '/reports' },
     { title: 'Perfil', icon: 'account_circle', path: '/profile' },
     { title: 'Salir', icon: 'directions_walk', path: '/login' },
   ];
