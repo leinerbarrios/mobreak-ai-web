@@ -1,0 +1,10 @@
+<section class="pause">
+  <img class="pause__image" [src]="pause().image" [alt]="pause().title" />
+  <div class="pause__content">
+    <h2>{{ pause().title }}</h2>
+    <p><b>Descripción: </b>{{ pause().description }}</p>
+    <div class="pause__content__date">
+      <span>{{ pause().date }}</span>
+    </div>
+  </div>
+</section>

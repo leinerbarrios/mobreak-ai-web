@@ -1,0 +1,14 @@
+<app-banner title="Listado de pausas activas"
+  subtitle="En esta sección puedes visualizar la descripción de las últimas pausas activas que has realizado" />
+
+<section class="pauses">
+  <div class="pauses__list">
+    @for (pause of paginatedPauses; track $index) {
+      <app-pause [pause]="pause"></app-pause>
+    }
+  </div>
+
+  <mat-paginator [length]="pauses.length" [pageSize]="pageSize" [pageSizeOptions]="[1, 2, 3]"
+    (page)="onPageChange($event)" aria-label="Select page">
+  </mat-paginator>
+</section>
