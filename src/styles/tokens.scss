@@ -65,9 +65,41 @@
     inverse-secondary: #a0cfd5,
     inverse-tertiary: #c8c6c8,
   ));
+  @include mat.snack-bar-overrides((
+    container-color: var(--mat-sys-tertiary),
+  ));
   @include mat.chips-overrides((
     elevated-selected-container-color: var(--mat-sys-primary),
     selected-label-text-color: var(--mat-sys-on-primary)
+  ));
+  @include mat.slide-toggle-overrides((
+    selected-focus-handle-color: var(--mat-sys-on-secondary),
+    selected-hover-handle-color: var(--mat-sys-tertiary),
+    selected-pressed-handle-color: var(--mat-sys-tertiary),
+    selected-focus-track-color: var(--mat-sys-secondary),
+    selected-hover-track-color: var(--mat-sys-secondary),
+    selected-pressed-track-color: var(--mat-sys-secondary),
+    selected-track-color: var(--mat-sys-secondary),
+    disabled-selected-handle-color: var(--mat-sys-secondary),
+    disabled-selected-icon-color: var(--mat-sys-secondary),
+    disabled-selected-track-color: var(--mat-sys-secondary),
+    disabled-unselected-handle-color: var(--mat-sys-secondary),
+    disabled-unselected-icon-color: var(--mat-sys-secondary),
+    disabled-unselected-track-color: var(--mat-sys-secondary),
+    handle-surface-color: var(--mat-sys-secondary),
+    selected-icon-color: var(--mat-sys-secondary),
+    unselected-focus-handle-color: var(--mat-sys-tertiary),
+    unselected-focus-track-color: var(--mat-sys-primary-fixed),
+    unselected-handle-color: var(--mat-sys-primary-fixed),
+    unselected-hover-handle-color: var(--mat-sys-on-secondary-fixed-variant),
+    unselected-hover-state-layer-color: var(--mat-sys-secondary),
+    unselected-hover-track-color: var(--mat-sys-inverse-primary),
+    unselected-icon-color: var(--mat-sys-secondary),
+    unselected-pressed-handle-color: var(--mat-sys-secondary),
+    unselected-pressed-state-layer-color: var(--mat-sys-secondary),
+    unselected-pressed-track-color: var(--mat-sys-secondary),
+    unselected-track-color: var(--mat-sys-inverse-primary),
+    handle-elevation-shadow: var(--mat-sys-secondary),
   ));
 }
 

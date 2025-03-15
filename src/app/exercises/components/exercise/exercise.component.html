@@ -1,0 +1,10 @@
+<section class="exercise">
+  <div class="exercise__header">
+    <h2 class="exercise__header__title">{{ exercise().title }}</h2>
+    <mat-slide-toggle [ngModel]="exercise().state"></mat-slide-toggle>
+  </div>
+  <p class="exercise__description">
+    <b>Descripción: </b><br>
+    {{ exercise().description }}
+  </p>
+</section>
