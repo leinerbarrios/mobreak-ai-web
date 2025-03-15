@@ -1,0 +1,30 @@
+<main class="login">
+  <h1 class="login__title">MoBreak</h1>
+  <h2 class="login__subtitle">Iniciar sesión</h2>
+  <form autocomplete="off" class="login__form">
+    <mat-form-field appearance="outline">
+      <mat-label>Correo</mat-label>
+      <input matInput placeholder="Ingrese su correo">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Contraseña</mat-label>
+      <input matInput [type]="hide() ? 'password' : 'text'" placeholder="Ingrese su contraseña">
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="clickEvent($event)"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide()"
+      >
+        <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <a class="login__form__forgot" mat-button>
+      Olvidé mi contraseña
+    </a>
+    <a routerLink="/" type="button" class="login__form__button" mat-flat-button>Iniciar sesión</a>
+    <a class="login__form__register" mat-button>
+      Registrarse
+    </a>
+  </form>
+</main>
