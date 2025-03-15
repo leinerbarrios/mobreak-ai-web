@@ -1,0 +1,43 @@
+<app-banner title="Configuración" subtitle="Adapta la configuración a tu gusto"></app-banner>
+
+<section class="settings">
+
+  <article class="settings__browser">
+    <h3 class="settings__browser__title">Navegador</h3>
+    <div class="settings__browser__option">
+      <span>Notificaciones en la web</span>
+      <mat-slide-toggle></mat-slide-toggle>
+    </div>
+    <div class="settings__browser__option">
+      <span>Tema oscuro</span>
+      <mat-slide-toggle></mat-slide-toggle>
+    </div>
+  </article>
+
+  <article class="settings__multiplatform">
+    <h3 class="settings__multiplatform__title">Multiplataforma</h3>
+    <div class="settings__multiplatform__option">
+      <div class="settings__multiplatform__option__title">
+        <p>Teams</p>
+        <span>{{ 'johndoe@gmail.com' }}</span>
+      </div>
+      <img class="settings__multiplatform__option__image" src="settings/teams.png" alt="Microsoft Teams">
+    </div>
+    <div class="settings__multiplatform__option">
+      <div class="settings__multiplatform__option__title">
+        <p>Slack</p>
+        <span>{{ 'johndoe@gmail.com' }}</span>
+      </div>
+      <img class="settings__multiplatform__option__image" src="settings/slack.png" alt="Slack ">
+    </div>
+    <a mat-button class="settings__multiplatform__option__button">
+      <mat-icon>add</mat-icon>
+      Agregar otro
+    </a>
+  </article>
+
+  <div class="settings__buttons">
+    <button mat-stroked-button routerLink="..">Volver</button>
+    <button mat-flat-button (click)="openSnackBar()">Guardar</button>
+  </div>
+</section>
