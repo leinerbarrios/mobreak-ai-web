@@ -13,7 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class ToolbarComponent {
   public menu = [
-    { title: '', icon: 'settings', path: '/settings' },
+    { title: 'Configuración', icon: 'settings', path: '/settings' },
     { title: 'Listado de pausas activas', icon: 'today', path: '/pauses' },
     { title: 'Tipos de ejercicios', icon: 'list', path: '/exercises' },
     { title: 'Informe', icon: 'folder', path: '/reports' },
