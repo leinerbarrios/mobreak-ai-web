@@ -1,0 +1,14 @@
+<app-banner title="Tipos de ejercicios"
+  subtitle="En esta sección puedes visualizar los tipos de ejercicios de tus pausas" />
+
+<section class="exercises">
+  <div class="exercises__list">
+    @for (exercise of paginatedExercises; track $index) {
+    <app-exercise [exercise]="exercise"></app-exercise>
+    }
+  </div>
+
+  <mat-paginator [length]="exercises.length" [pageSize]="pageSize" [pageSizeOptions]="[1, 2, 3]"
+    (page)="onPageChange($event)" aria-label="Select page">
+  </mat-paginator>
+</section>
