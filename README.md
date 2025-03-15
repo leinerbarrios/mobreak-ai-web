@@ -2,6 +2,21 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
 
+## Installation
+
+To install the project, run the following command:
+
+```bash
+git clone https://github.com/leinerbarrios/mobreak-ai-web.git
+``` 
+
+Then, navigate to the project directory and install the dependencies:
+
+```bash
+cd mobreak-ai-web
+npm install
+```
+
 ## Development server
 
 To start a local development server, run:
